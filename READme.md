@@ -64,23 +64,21 @@
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="https://i.ibb.co/67Z2nYv9/upload-1775955037014-74c8121c-jpg.jpg" alt="WOLFBOT WhatsApp Bot Menu" width="320"/>
+  <img src="https://i.ibb.co/67Z2nYv9/upload-1775955037014-74c8121c-jpg.jpg" alt="WOLFBOT WhatsApp Bot Menu" width="220"/>
   &nbsp;
-  <img src="https://i.ibb.co/N6SX8NGj/upload-1775955328532-68ad9c6f-jpg.jpg" alt="WOLFBOT Ping Command" width="320"/>
-</p>
-<p align="center">
-  <img src="https://i.ibb.co/Nndx7X27/upload-1775955392446-1428e261-jpg.jpg" alt="WOLFBOT Uptime Command" width="320"/>
+  <img src="https://i.ibb.co/N6SX8NGj/upload-1775955328532-68ad9c6f-jpg.jpg" alt="WOLFBOT Ping Command" width="220"/>
   &nbsp;
-  <img src="https://i.ibb.co/fG4L2f6Z/upload-1775954993959-0bc0a5f9-jpg.jpg" alt="WOLFBOT AI Music Generator" width="320"/>
+  <img src="https://i.ibb.co/Nndx7X27/upload-1775955392446-1428e261-jpg.jpg" alt="WOLFBOT Uptime Command" width="220"/>
 </p>
 <p align="center">
-  <img src="https://i.ibb.co/84KJgJ8Z/upload-1775954974332-f1651ae8-jpg.jpg" alt="WOLFBOT AI Music Generator in Progress" width="320"/>
+  <img src="https://i.ibb.co/fG4L2f6Z/upload-1775954993959-0bc0a5f9-jpg.jpg" alt="WOLFBOT AI Music Generator" width="220"/>
+  &nbsp;
+  <img src="https://i.ibb.co/84KJgJ8Z/upload-1775954974332-f1651ae8-jpg.jpg" alt="WOLFBOT AI Music Generator in Progress" width="220"/>
+  &nbsp;
+  <img src="https://i.ibb.co/W1GDxQD/Screenshot-2026-04-29-092320.png" alt="WOLFBOT Logs" width="220"/>
 </p>
 <p align="center">
-  <img src="https://i.ibb.co/W1GDxQD/Screenshot-2026-04-29-092320.png" alt="WOLFBOT Logs" width="320"/>
-</p>
-<p align="center">
-  <img src="https://i.ibb.co/tpfXtxxZ/upload-1777476964351-02052e4b-jpg.jpg" alt="WOLFBOT Success connection on windows" width="320"/>
+  <img src="https://i.ibb.co/tpfXtxxZ/upload-1777476964351-02052e4b-jpg.jpg" alt="WOLFBOT Success connection on windows" width="220"/>
 </p>
 
 ---
