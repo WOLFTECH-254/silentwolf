@@ -1,55 +1,98 @@
 
 {
-  "name": "WOLFBOT",
-  "description": "Professional WhatsApp Bot with auto-session authentication",
-  "logo": "https://i.ibb.co/zWGkw7Jz/767022de0778.png",
-  "keywords": ["whatsapp", "bot", "wolfbot", "baileys", "session"],
-  "repository": "https://github.com/WOLFTECH-254/silentwolf.git",
-  "scripts": {
-    "start": "node --no-warnings --experimental-global-webcrypto index.js"
-  },
+  "name": "KEITH-MD",
+  "description": "This is a simple whatsapp bot built with nodejs to make your WhatsApp enjoyable",
+  "keywords": [
+    "bot",
+    "whatsapp",
+    "keith",
+    "whatsapp-stickers",
+    "anime",
+    "whatsapp-bot",
+    "whatsapp-sticker-bot",
+    "whatsapp-botto",
+    "baileys",
+    "baileys-md",
+    "md-bot"
+  ],
+  "website": "https://keithsite.top",
+  "repository": "https://github.com/kkeizzah25/KEITH-MD.git",
+  "logo": "https://i.ibb.co/PsZnb9NH/0d81ac6b1fb1.jpg",
+  "success_url": "/",
   "env": {
-    "SESSION_ID": {
-      "description": "REQUIRED: Your WhatsApp session ID. Must begin with 'WOLF-BOT:'",
-      "value": "",
+    "OWNER_NUMBER": {
+      "description": "Bot owner phone number without + or spaces. Example: 254748387615, 254796299159",
+      "required": false
+    },
+    "SESSION": {
+      "description": "Your WhatsApp session ID",
       "required": true
     },
+     
     "DATABASE_URL": {
-      "description": "OPTIONAL: PostgreSQL connection string for persistent storage. Supports Heroku Postgres, Supabase, Neon, Railway, etc. Format: postgres://user:password@host:5432/dbname?sslmode=require — Leave blank to run on SQLite only.",
+      "description": "insert your database url",
       "value": "",
       "required": false
     },
-    "PTERODACTYL_KEY": {
-      "description": "OPTIONAL: Your Pterodactyl Application API key (ptlc_...). Only needed if you use panel commands.",
-      "value": "",
+    
+    "AUTOVIEW_STATUS": {
+      "description": "Auto view WhatsApp status (true/false)",
+      "value": "true",
       "required": false
     },
-    "PTERODACTYL_URL": {
-      "description": "OPTIONAL: Your Pterodactyl panel URL (e.g. https://panel.example.com). Only needed if you use panel commands.",
-      "value": "",
+    "AUTOLIKE_STATUS": {
+      "description": "Auto like WhatsApp status (true/false)",
+      "value": "true",
       "required": false
     },
-    "PAYSTACK_KEY": {
-      "description": "OPTIONAL: Your Paystack secret key (sk_live_... or sk_test_...). Only needed for M-Pesa STK push payments.",
-      "value": "",
+    "STATUS_LIKE_EMOJIS": {
+      "description": "Emojis to use for liking status (comma-separated)",
+      "value": "💚,🫟",
       "required": false
-    }
-  },
-  "formation": {
-    "web": {
-      "quantity": 1,
-      "size": "basic"
+    },
+    
+    "PREFIX": {
+      "description": "Bot command prefix",
+      "value": ".",
+      "required": false
+    },
+    
+    "BOT_EXPIRATION_DATE": {
+      "description": "choose your preferred bot expiration date in the format dd/mm/yy",
+      "value": "11/03/2027",
+      "required": false
+    },
+    
+    "BOT_PIC": {
+      "description": "Bot profile picture URL",
+      "value": "https://i.ibb.co/PsZnb9NH/0d81ac6b1fb1.jpg",
+      "required": false
+    },
+    "BOTNAME": {
+      "description": "Bot display name",
+      "value": "KEITH-MD",
+      "required": false
+    },
+    "AUTO_SOCIAL_DOWNLOAD": {
+      "description": "when enabled true bot will automatically download social media videos when you share the url example for tiktok instagram youtube and many more",
+      "value": "false",
+      "required": false
+    },
+    "OWNER_NAME": {
+      "description": "your botname",
+      "value": "Keith",
+      "required": false
+    },
+    "MODE": {
+      "description": "Bot operation mode (public/private)",
+      "value": "public",
+      "required": false
     }
   },
   "buildpacks": [
     {
-      "url": "heroku/nodejs"
-    },
-    {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
-    },
-    {
-      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
     }
-  ]
+  ],
+  "stack": "heroku-24"
 }
