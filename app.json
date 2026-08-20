@@ -3,8 +3,8 @@
   "name": "WOLFBOT",
   "description": "Professional WhatsApp Bot with auto-session authentication",
   "logo": "https://i.ibb.co/zWGkw7Jz/767022de0778.png",
-  "keywords": ["whatsapp", "bot", "wolfbot", "baileys", "session"],
-  "repository": "https://github.com/WOLFTECH-254/silentwolf.git",
+  "keywords": ["whatsapp", "bot", "wolfbot", "baileys", "session", "wolfsocket"],
+  "repository": "https://github.com/WOLVAREX/silentwolf.git",
   "scripts": {
     "start": "node --no-warnings --experimental-global-webcrypto index.js"
   },
