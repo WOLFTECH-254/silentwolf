@@ -33,6 +33,11 @@
       "description": "OPTIONAL: Your Paystack secret key (sk_live_... or sk_test_...). Only needed for M-Pesa STK push payments.",
       "value": "",
       "required": false
+    },
+    "MONGODB_URI": {
+      "description": "OPTIONAL: MongoDB Atlas connection string for persistent cloud storage. Set this privately in your deployment environment; do not commit the actual URI.",
+      "value": "",
+      "required": false
     }
   },
   "formation": {
