@@ -38,6 +38,26 @@
       "description": "OPTIONAL: MongoDB Atlas connection string for persistent cloud storage. Set this privately in your deployment environment; do not commit the actual URI.",
       "value": "",
       "required": false
+    },
+    "PUBLIC_URL": {
+      "description": "OPTIONAL: Public webserver URL used for browser pairing, for example https://bot.example.com:3000. Leave blank if the platform provides the address separately.",
+      "value": "",
+      "required": false
+    },
+    "PUBLIC_HOST": {
+      "description": "OPTIONAL: Public hostname or IP used for browser pairing when PUBLIC_URL is not set.",
+      "value": "",
+      "required": false
+    },
+    "PUBLIC_PORT": {
+      "description": "OPTIONAL: Public port used with PUBLIC_HOST. Defaults to the server port.",
+      "value": "3000",
+      "required": false
+    },
+    "PUBLIC_SCHEME": {
+      "description": "OPTIONAL: Public URL scheme used with PUBLIC_HOST, usually http or https.",
+      "value": "http",
+      "required": false
     }
   },
   "formation": {
