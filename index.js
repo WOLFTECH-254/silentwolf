@@ -29,7 +29,6 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { execSync } from 'child_process';
 import cp from 'child_process';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -102,7 +101,7 @@ function _cpDir(src, dst) {
 
 function backupSettings(dir) {
   if (!fs.existsSync(dir)) return;
-  try { execSync('rm -rf ' + _BK, { stdio: 'ignore', timeout: 15000 }); } catch (_) {}
+  try { fs.rmSync(_BK, { recursive: true, force: true }); } catch (_) {}
   fs.mkdirSync(_BK, { recursive: true });
   try {
     for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -168,16 +167,20 @@ process.chdir = function (dir) {
   _origChdir(absDir);
   _botDir = absDir;
   restoreSettings(absDir);
+  // Preserve settings from an existing installation on first run, before a
+  // later extraction can replace the directory with a clean source archive.
+  if (!fs.existsSync(_BK)) backupSettings(absDir);
   _fixBaileys(absDir);
 };
 
-// Periodic backup every 45 s
+// Periodic backup every 10 s so recent setting changes survive panel restarts
+// even when the panel terminates the process without delivering SIGTERM.
 setInterval(() => {
   const dir = _botDir;
   if (dir && fs.existsSync(path.join(dir, 'index.js'))) {
     backupSettings(dir);
   }
-}, 45_000).unref();
+}, 10_000).unref();
 
 // Backup on clean shutdown
 process.on('SIGTERM', () => {
