@@ -58,12 +58,6 @@
       "description": "OPTIONAL: Public URL scheme used with PUBLIC_HOST, usually http or https.",
       "value": "http",
       "required": false
-    },
-    "APIX_API_KEY": {
-      "description": "OPTIONAL: APIX AI and media API key. Users may provide their own key; when blank, WolfBot uses its built-in APIX fallback key.",
-      "value": "",
-      "required": false
-    },
   },
   "formation": {
     "web": {
