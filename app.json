@@ -1,9 +1,8 @@
-
 {
   "name": "WOLFBOT",
   "description": "Professional WhatsApp Bot with auto-session authentication",
   "logo": "https://i.ibb.co/zWGkw7Jz/767022de0778.png",
-  "keywords": ["whatsapp", "bot", "wolfbot", "baileys", "session", "wolfsocket"],
+  "keywords": ["whatsapp", "bot", "wolfbot", "baileys", "session"],
   "repository": "https://github.com/WOLVAREX/silentwolf.git",
   "scripts": {
     "start": "node --no-warnings --experimental-global-webcrypto index.js"
@@ -34,30 +33,41 @@
       "value": "",
       "required": false
     },
+    "BOT_PREFIX": {
+      "description": "OPTIONAL: Command prefix for the bot (e.g. . or ! or ?). Defaults to '.' if not set. Automatically updated when you use .setprefix.",
+      "value": ".",
+      "required": false
+    },
+    "BOT_MODE": {
+      "description": "OPTIONAL: Bot operating mode. Options: public, private, group, solo, sudo, super, buttons, channel. Defaults to 'public'. Automatically updated when you use .setmode.",
+      "value": "public",
+      "required": false
+    },
+    "BOT_NAME": {
+      "description": "OPTIONAL: Display name for the bot shown in menus and messages. Defaults to 'WOLFBOT'. Automatically updated when you use .setbotname.",
+      "value": "WOLFBOT",
+      "required": false
+    },
+    "BOT_TIMEZONE": {
+      "description": "OPTIONAL: Timezone for time/date display in menus (e.g. Africa/Lagos, Asia/Kolkata, America/New_York). Defaults to UTC. Automatically updated when you use .settimezone.",
+      "value": "UTC",
+      "required": false
+    },
+    "OWNER_NUMBER": {
+      "description": "OPTIONAL: Your WhatsApp number in international format without + (e.g. 2348012345678). Used to scope settings to your bot instance and grant owner privileges.",
+      "value": "",
+      "required": false
+    },
     "MONGODB_URI": {
-      "description": "OPTIONAL: MongoDB Atlas connection string for persistent cloud storage. Set this privately in your deployment environment; do not commit the actual URI.",
+      "description": "OPTIONAL: MongoDB Atlas connection string for persistent cloud storage. Format: mongodb+srv://user:password@cluster.mongodb.net/dbname?retryWrites=true&w=majority — Leave blank to run on SQLite only. Atlas tip: set Network Access → Allow Access from Anywhere (0.0.0.0/0) for dynamic-IP platforms like Render, Railway or Heroku.",
       "value": "",
       "required": false
     },
-    "PUBLIC_URL": {
-      "description": "OPTIONAL: Public webserver URL used for browser pairing, for example https://bot.example.com:3000. Leave blank if the platform provides the address separately.",
+    "APIX_API_KEY": {
+      "description": "OPTIONAL: APIX AI and media API key. Users may provide their own key; when blank, WolfBot uses its built-in APIX fallback key.",
       "value": "",
       "required": false
-    },
-    "PUBLIC_HOST": {
-      "description": "OPTIONAL: Public hostname or IP used for browser pairing when PUBLIC_URL is not set.",
-      "value": "",
-      "required": false
-    },
-    "PUBLIC_PORT": {
-      "description": "OPTIONAL: Public port used with PUBLIC_HOST. Defaults to the server port.",
-      "value": "3000",
-      "required": false
-    },
-    "PUBLIC_SCHEME": {
-      "description": "OPTIONAL: Public URL scheme used with PUBLIC_HOST, usually http or https.",
-      "value": "http",
-      "required": false
+    }
   },
   "formation": {
     "web": {
