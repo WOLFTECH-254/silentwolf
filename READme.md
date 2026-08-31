@@ -55,7 +55,7 @@
 
 ## What is WOLFBOT?
 
-**WOLFBOT** (also known as **Silent Wolf**) is a powerful, fully-featured WhatsApp automation bot built by **Silent Wolf**. It runs on **Node.js** using the **Baileys v7** library and is designed for both personal use and group management. Whether you need AI-powered chat responses, media downloads, group moderation, or automated status reactions — WOLFBOT handles it all silently and efficiently.
+**WOLFBOT** (also known as **Silent Wolf**) is a powerful, fully-featured WhatsApp automation bot built by **Silent Wolf**. It runs on **Node.js** using the **wolfsocket** library a baileys fork maintained under WOLF TECH and is designed for both personal use and group management. Whether you need AI-powered chat responses, media downloads, group moderation, or automated status reactions — WOLFBOT handles it all silently and efficiently.
 
 > Silent Wolf WhatsApp Bot — fast, intelligent, and always watching.
 
